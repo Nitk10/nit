@@ -1,0 +1,103 @@
+   
+<html>   
+    <head>  
+        <body background="C:\img.jpg " width="450" height="450"></body>  
+    <title> Login Page </title>  
+
+
+         <style>
+            body
+            {
+              background-image: url('anime.jpeg');
+              background-size: cover;
+              background-repeat: no-repeat;
+            }
+           
+        </style> 
+
+     <style>
+    
+            
+    button {   
+           background-color: brown;   
+           width: 100%;  
+            color:royalblue;   
+            padding: 15px;   
+              
+              
+             
+             }   
+         
+     input[type=text], input[type=password],input[type=email],input[type=number] {   
+            width: 100%;   
+            margin: 8px 0;  
+            padding: 12px 20px;   
+               
+            border: 3px solid brown;   
+              
+        } 
+        
+        .gradient{
+                    width: 400px;
+                    height: 300px;
+                    
+                    
+                } 
+      
+       
+            
+         
+      
+    </style>   
+    </head>    
+    <body>    
+          
+         <center>
+           
+            
+               <div class="gradient"> 
+                
+                <form name="myForm" action="loginpage.html" onsubmit="return validateForm()" method="post">
+                    <h1 align="center" style="color:brown;">CREATE Profile</h1>
+                  <p style="color:brown;">  NAME :
+                    <input type="text" name="fname" style="color: black;">
+                  </p>
+                  
+                  <p style="color: brown;">GENDER :
+                      <input type="radio" name="gender" value="Male" style="color: black;">Male
+                      <input type="radio" name="gender" value="Female" style="color: black;">Female<br>
+                  </p> 
+        
+                  <p style="color: brown;">PHONE NUMBER :
+                      <input type="tel" name="phone" pattern="^\d{10}$"  style="color: black;" required >
+                  </p>
+        
+                  <p style="color:brown;">COUNTRY :
+                      <select name = "Country" style="color: black;" required>
+                          <option value="Select" style="color: black;" >Select</option>
+                          <option value="India" style="color: black;" >India</option>
+                          
+                      </select>
+                  </p>
+        
+
+        
+                  </hr>
+                  
+                  <p style="color:brown;">EMAIL :
+                      <input type="email" name="Email" style="color: black;" required>
+                  </p>
+                  <p style="color:brown;"> PASSWORD
+                      <input type = "password" name="password"  style="color: black;" required>
+                  </p>
+        
+                  <p>
+                     <strong><input type="submit" style="color:brown;"  value="SUBMIT"></strong> 
+                        
+                    </p>
+            
+            </form>
+           
+             
+    </body>     
+    </html> 
